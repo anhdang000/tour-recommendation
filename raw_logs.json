@@ -1,0 +1,1352 @@
+[
+    {
+        "partitionID": 1,
+        "offset": 1284102,
+        "timestamp": 1661768898131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105602Z",
+                "log": "key:::target\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284103,
+        "timestamp": 1661768898131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105610Z",
+                "log": "key:::headerRequest\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284104,
+        "timestamp": 1661768898131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105617Z",
+                "log": "key:::dl147\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284105,
+        "timestamp": 1661768898131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105623Z",
+                "log": "key:::dl146\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284106,
+        "timestamp": 1661768898131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105687Z",
+                "log": "key:::when\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284107,
+        "timestamp": 1661768898132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105706Z",
+                "log": "key:::lang\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284108,
+        "timestamp": 1661768898132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105711Z",
+                "log": "key:::langDefault\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284109,
+        "timestamp": 1661768898132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.105715Z",
+                "log": "key:::isShare\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284110,
+        "timestamp": 1661768898132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:17.115559Z",
+                "log": "2022-08-29 17:28:17.115  INFO 1 --- [nio-8080-exec-6] com.core.rest.utils.HttpLoggingFilter    : :::LOG-REQ-RESP:::{\"query\":\"{access_token=Ik1Zq906edONEKKWYYe4kH7iC8c}\",\"uri\":\"/posts/socPostCreat/v1\",\"pathInfo\":\"/posts/socPostCreat/v1\",\"url\":\"http://t-k8s-api-gw-non-ingress.hahalolo.com/posts/socPostCreat/v1\",\"header\":{\"uci\":[\"WFOW0G7cewtofNhmcSohjdbQ0dvlDAqjVXfeiHocasA=\"],\"cookie\":[\"SESSION=ZDAyYzg2ZTctMDJiZS00MmIxLWJmMzQtZjA2NTA0MWUwNDdl; SESSION=MjQ2YmQwMmItMmQ3Yy00MTgzLTgyOTktNTZhZjNlZjdkYzcw; SESSION=OTQxN2VhZjctY2EzYS00NTQ4LWIzMzgtNzc1MGMwZDAyNTM4\"],\"user-agent\":[\"PostmanRuntime/7.26.8\"],\"accept\":[\"*/*\"],\"postman-token\":[\"2151ac51-b308-404e-923a-c396bf6f8599\"],\"accept-encoding\":[\"gzip, deflate, br\"],\"content-length\":[\"577\"],\"x-real-ip\":[\"10.0.2.161\",\"10.0.2.161\"],\"forwarded\":[\"proto=http;host=t-k8s-api-gw-non-ingress.hahalolo.com;for=\\\"192.168.39.0:24337\\\"\"],\"host\":[\"192.168.39.27:8080\"],\"x-forwarded-proto\":[\"http\"],\"x-forwarded-prefix\":[\"/feed\"],\"x-forwarded-port\":[\"80\"],\"x-forwarded-host\":[\"t-k8s-api-gw-non-ingress.hahalolo.com\"],\"Content-Type\":[\"application/json;charset=UTF-8\"]},\"method\":\"POST\",\"className\":\"\",\"serverName\":\"t-k8s-api-gw-non-ingress.hahalolo.com\",\"user\":\"{nv108=minhtri.tmt1905@gmail.com, lang=vi, currency=VND, nv103=Truong, nv104=Minh Tri, nv105=Truong Minh Tri, nd106=1997-05-19, nv107=M, nv120=https://test-media.hahalolo.com/2021/06/22/04/14/cce13889aac64f2797ed85851bec73fe-1624335275.jpg, pn100=5f3220f1bc502605ccadf5dc, account_enabled=1, account_non_locked=1, nn130=1, nn132=0, nv111=VN, nv113=VN}\",\"bodyReq\":{\"scope\": \"pub\",\"owner\": \"5cfe239f7094910419363846\",\"typpost\": \"nor\",\"actor\": \"user\",\"content\": \"Hello\",\"location\":[{\"name\": \"Bosnia and Herzegovina\",\"what\": \"3277605\",\"type\": \"area\"}],\"title\": \"What is Lorem Ipsum?\",\"cover\": {\"path\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"thumb\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"width\": 468,\"type\": \"media\",\"height\": 263}},\"bodyResp\":{\"status\":{\"success\":true,\"errors\":null,\"code\":200},\"elements\":[{\"scope\":\"pub\",\"owner\":\"5f3220f1bc502605ccadf5dc\",\"typpost\":\"nor\",\"actor\":\"user\",\"content\":\"Hello\",\"location\":[{\"name\":\"Bosnia and Herzegovina\",\"what\":\"3277605\",\"type\":\"area\"}],\"title\":\"What is Lorem Ipsum?\",\"target\":\"5f3220f1bc502605ccadf5dc\",\"dl147\":\"minhtri.tmt1905@gmail.com\",\"when\":\"2022-08-29T10:28:17.099+00:00\",\"lang\":\"vi\",\"langDefault\":\"vi\",\"isShare\":0,\"id\":\"630c94c108aae529644be382\",\"profile\":{\"name\":\"Truong Minh Tri\",\"id\":\"5f3220f1bc502605ccadf5dc\",\"avatar\":\"https://test-media.hahalolo.com/2021/06/22/04/14/af13d853421700bcbf15f1315c9e632f-1624335276.jpg\"}}]},\"timeReq\":\"2022-08-29T10:28:17.090614Z\",\"timeResp\":\"2022-08-29T10:28:17.114756Z\"}\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284111,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652856Z",
+                "log": "key:::scope\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284112,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652890Z",
+                "log": "key:::owner\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284113,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652897Z",
+                "log": "key:::typpost\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284114,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652902Z",
+                "log": "key:::actor\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284115,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652907Z",
+                "log": "key:::content\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284116,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652911Z",
+                "log": "key:::location\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284117,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652914Z",
+                "log": "key:::title\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284118,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652919Z",
+                "log": "key:::target\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284119,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652924Z",
+                "log": "key:::headerRequest\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284120,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652928Z",
+                "log": "key:::dl147\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284121,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652932Z",
+                "log": "key:::dl146\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284122,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652936Z",
+                "log": "key:::when\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284123,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652940Z",
+                "log": "key:::lang\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284124,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652943Z",
+                "log": "key:::langDefault\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284125,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.652967Z",
+                "log": "key:::isShare\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 1,
+        "offset": 1284126,
+        "timestamp": 1661768923131,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T10:28:39.659315Z",
+                "log": "2022-08-29 17:28:39.659  INFO 1 --- [nio-8080-exec-3] com.core.rest.utils.HttpLoggingFilter    : :::LOG-REQ-RESP:::{\"query\":\"{access_token=Ik1Zq906edONEKKWYYe4kH7iC8c}\",\"uri\":\"/posts/socPostCreat/v1\",\"pathInfo\":\"/posts/socPostCreat/v1\",\"url\":\"http://t-k8s-api-gw-non-ingress.hahalolo.com/posts/socPostCreat/v1\",\"header\":{\"uci\":[\"WFOW0G7cewtofNhmcSohjdbQ0dvlDAqjVXfeiHocasA=\"],\"cookie\":[\"SESSION=ZDAyYzg2ZTctMDJiZS00MmIxLWJmMzQtZjA2NTA0MWUwNDdl; SESSION=MjQ2YmQwMmItMmQ3Yy00MTgzLTgyOTktNTZhZjNlZjdkYzcw; SESSION=OTQxN2VhZjctY2EzYS00NTQ4LWIzMzgtNzc1MGMwZDAyNTM4\"],\"user-agent\":[\"PostmanRuntime/7.26.8\"],\"accept\":[\"*/*\"],\"postman-token\":[\"29265c73-8fbf-44ad-af02-e22998fb873c\"],\"accept-encoding\":[\"gzip, deflate, br\"],\"content-length\":[\"577\"],\"x-real-ip\":[\"10.0.2.161\",\"10.0.2.161\"],\"forwarded\":[\"proto=http;host=t-k8s-api-gw-non-ingress.hahalolo.com;for=\\\"192.168.39.0:24337\\\"\"],\"host\":[\"192.168.39.27:8080\"],\"x-forwarded-proto\":[\"http\"],\"x-forwarded-prefix\":[\"/feed\"],\"x-forwarded-port\":[\"80\"],\"x-forwarded-host\":[\"t-k8s-api-gw-non-ingress.hahalolo.com\"],\"Content-Type\":[\"application/json;charset=UTF-8\"]},\"method\":\"POST\",\"className\":\"\",\"serverName\":\"t-k8s-api-gw-non-ingress.hahalolo.com\",\"user\":\"{nv108=minhtri.tmt1905@gmail.com, lang=vi, currency=VND, nv103=Truong, nv104=Minh Tri, nv105=Truong Minh Tri, nd106=1997-05-19, nv107=M, nv120=https://test-media.hahalolo.com/2021/06/22/04/14/cce13889aac64f2797ed85851bec73fe-1624335275.jpg, pn100=5f3220f1bc502605ccadf5dc, account_enabled=1, account_non_locked=1, nn130=1, nn132=0, nv111=VN, nv113=VN}\",\"bodyReq\":{\"scope\": \"pub\",\"owner\": \"5cfe239f7094910419363846\",\"typpost\": \"nor\",\"actor\": \"user\",\"content\": \"Hello\",\"location\":[{\"name\": \"Bosnia and Herzegovina\",\"what\": \"3277605\",\"type\": \"area\"}],\"title\": \"What is Lorem Ipsum?\",\"cover\": {\"path\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"thumb\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"width\": 468,\"type\": \"media\",\"height\": 263}},\"bodyResp\":{\"status\":{\"success\":true,\"errors\":null,\"code\":200},\"elements\":[{\"scope\":\"pub\",\"owner\":\"5f3220f1bc502605ccadf5dc\",\"typpost\":\"nor\",\"actor\":\"user\",\"content\":\"Hello\",\"location\":[{\"name\":\"Bosnia and Herzegovina\",\"what\":\"3277605\",\"type\":\"area\"}],\"title\":\"What is Lorem Ipsum?\",\"target\":\"5f3220f1bc502605ccadf5dc\",\"dl147\":\"minhtri.tmt1905@gmail.com\",\"when\":\"2022-08-29T10:28:39.648+00:00\",\"lang\":\"vi\",\"langDefault\":\"vi\",\"isShare\":0,\"id\":\"630c94d708aae529644be383\",\"profile\":{\"name\":\"Truong Minh Tri\",\"id\":\"5f3220f1bc502605ccadf5dc\",\"avatar\":\"https://test-media.hahalolo.com/2021/06/22/04/14/af13d853421700bcbf15f1315c9e632f-1624335276.jpg\"}}]},\"timeReq\":\"2022-08-29T10:28:39.553266Z\",\"timeResp\":\"2022-08-29T10:28:39.658933Z\"}\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284593,
+        "timestamp": 1661766628132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:50:25.690856Z",
+                "log": "key:::dl146\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284594,
+        "timestamp": 1661766628132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:50:25.690873Z",
+                "log": "key:::when\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284595,
+        "timestamp": 1661766628132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:50:25.690889Z",
+                "log": "key:::lang\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284596,
+        "timestamp": 1661766628132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:50:25.690904Z",
+                "log": "key:::langDefault\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284597,
+        "timestamp": 1661766628133,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:50:25.690921Z",
+                "log": "key:::isShare\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284598,
+        "timestamp": 1661766628133,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:50:25.702451Z",
+                "log": "2022-08-29 16:50:25.701  INFO 1 --- [nio-8080-exec-8] com.core.rest.utils.HttpLoggingFilter    : :::LOG-REQ-RESP:::{\"query\":\"{access_token=Ik1Zq906edONEKKWYYe4kH7iC8c}\",\"uri\":\"/posts/socPostCreat/v1\",\"pathInfo\":\"/posts/socPostCreat/v1\",\"url\":\"http://t-k8s-api-gw-non-ingress.hahalolo.com/posts/socPostCreat/v1\",\"header\":{\"uci\":[\"WFOW0G7cewtofNhmcSohjdbQ0dvlDAqjVXfeiHocasA=\"],\"cookie\":[\"SESSION=ZDAyYzg2ZTctMDJiZS00MmIxLWJmMzQtZjA2NTA0MWUwNDdl; SESSION=MjQ2YmQwMmItMmQ3Yy00MTgzLTgyOTktNTZhZjNlZjdkYzcw; SESSION=OTQxN2VhZjctY2EzYS00NTQ4LWIzMzgtNzc1MGMwZDAyNTM4\"],\"user-agent\":[\"PostmanRuntime/7.26.8\"],\"accept\":[\"*/*\"],\"postman-token\":[\"23f51e33-27ca-4d83-9051-503ed4aba9fa\"],\"accept-encoding\":[\"gzip, deflate, br\"],\"content-length\":[\"1507\"],\"x-real-ip\":[\"10.0.2.161\",\"10.0.2.161\"],\"forwarded\":[\"proto=http;host=t-k8s-api-gw-non-ingress.hahalolo.com;for=\\\"10.10.11.32:64896\\\"\"],\"host\":[\"192.168.39.27:8080\"],\"x-forwarded-proto\":[\"http\"],\"x-forwarded-prefix\":[\"/feed\"],\"x-forwarded-port\":[\"80\"],\"x-forwarded-host\":[\"t-k8s-api-gw-non-ingress.hahalolo.com\"],\"Content-Type\":[\"application/json;charset=UTF-8\"]},\"method\":\"POST\",\"className\":\"\",\"serverName\":\"t-k8s-api-gw-non-ingress.hahalolo.com\",\"user\":\"{nv108=minhtri.tmt1905@gmail.com, lang=vi, currency=VND, nv103=Truong, nv104=Minh Tri, nv105=Truong Minh Tri, nd106=1997-05-19, nv107=M, nv120=https://test-media.hahalolo.com/2021/06/22/04/14/cce13889aac64f2797ed85851bec73fe-1624335275.jpg, pn100=5f3220f1bc502605ccadf5dc, account_enabled=1, account_non_locked=1, nn130=1, nn132=0, nv111=VN, nv113=VN}\",\"bodyReq\":{\"scope\": \"pub\",\"owner\": \"5cfe239f7094910419363846\",\"typpost\": \"nor\",\"actor\": \"user\",\"content\": \"::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605::\",\"location\":[{\"name\": \"Bosnia and Herzegovina\",\"what\": \"3277605\",\"type\": \"area\"}],\"title\": \"What is Lorem Ipsum?\",\"cover\": {\"path\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"thumb\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"width\": 468,\"type\": \"media\",\"height\": 263}},\"bodyResp\":{\"status\":{\"success\":true,\"errors\":null,\"code\":200},\"elements\":[{\"scope\":\"pub\",\"owner\":\"5f3220f1bc502605ccadf5dc\",\"typpost\":\"nor\",\"actor\":\"user\",\"content\":\"::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605::\",\"location\":[{\"name\":\"Bosnia and Herzegovina\",\"what\":\"3277605\",\"type\":\"area\"}],\"title\":\"What is Lorem Ipsum?\",\"target\":\"5f3220f1bc502605ccadf5dc\",\"dl147\":\"minhtri.tmt1905@gmail.com\",\"when\":\"2022-08-29T09:50:25.684+00:00\",\"lang\":\"vi\",\"langDefault\":\"vi\",\"isShare\":0,\"id\":\"630c8be108aae529644be380\",\"profile\":{\"name\":\"Truong Minh Tri\",\"id\":\"5f3220f1bc502605ccadf5dc\",\"avatar\":\"https://test-media.hahalolo.com/2021/06/22/04/14/af13d853421700bcbf15f1315c9e632f-1624335276.jpg\"}}]},\"timeReq\":\"2022-08-29T09:50:25.666045Z\",\"timeResp\":\"2022-08-29T09:50:25.701694Z\"}\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284599,
+        "timestamp": 1661766693132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:31.599177Z",
+                "log": "2022-08-29 16:51:31.598  INFO 1 --- [io-8080-exec-10] com.core.rest.utils.HttpLoggingFilter    : :::LOG-REQ-RESP:::{\"query\":\"{access_token=Ik1Zq906edONEKKWYYe4kH7iC8c}\",\"uri\":\"/posts/socPostCreat/v1\",\"pathInfo\":\"/posts/socPostCreat/v1\",\"url\":\"http://t-k8s-api-gw-non-ingress.hahalolo.com/posts/socPostCreat/v1\",\"header\":{\"uci\":[\"WFOW0G7cewtofNhmcSohjdbQ0dvlDAqjVXfeiHocasA=\"],\"cookie\":[\"SESSION=ZDAyYzg2ZTctMDJiZS00MmIxLWJmMzQtZjA2NTA0MWUwNDdl; SESSION=MjQ2YmQwMmItMmQ3Yy00MTgzLTgyOTktNTZhZjNlZjdkYzcw; SESSION=OTQxN2VhZjctY2EzYS00NTQ4LWIzMzgtNzc1MGMwZDAyNTM4\"],\"user-agent\":[\"PostmanRuntime/7.26.8\"],\"accept\":[\"*/*\"],\"postman-token\":[\"2e0d54f7-87f7-4c24-ad1a-3377152cf3fd\"],\"accept-encoding\":[\"gzip, deflate, br\"],\"content-length\":[\"1507\"],\"x-real-ip\":[\"10.0.2.161\",\"10.0.2.161\"],\"forwarded\":[\"proto=http;host=t-k8s-api-gw-non-ingress.hahalolo.com;for=\\\"10.10.11.32:19912\\\"\"],\"host\":[\"192.168.39.27:8080\"],\"x-forwarded-proto\":[\"http\"],\"x-forwarded-prefix\":[\"/feed\"],\"x-forwarded-port\":[\"80\"],\"x-forwarded-host\":[\"t-k8s-api-gw-non-ingress.hahalolo.com\"],\"Content-Type\":[\"application/json;charset=UTF-8\"]},\"method\":\"POST\",\"className\":\"\",\"serverName\":\"t-k8s-api-gw-non-ingress.hahalolo.com\",\"user\":\"{nv108=minhtri.tmt1905@gmail.com, lang=vi, currency=VND, nv103=Truong, nv104=Minh Tri, nv105=Truong Minh Tri, nd106=1997-05-19, nv107=M, nv120=https://test-media.hahalolo.com/2021/06/22/04/14/cce13889aac64f2797ed85851bec73fe-1624335275.jpg, pn100=5f3220f1bc502605ccadf5dc, account_enabled=1, account_non_locked=1, nn130=1, nn132=0, nv111=VN, nv113=VN}\",\"bodyReq\":{\"scope\": \"pub\",\"owner\": \"5cfe239f7094910419363846\",\"typpost\": \"123\",\"actor\": \"user\",\"content\": \"::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605::\",\"location\":[{\"name\": \"Bosnia and Herzegovina\",\"what\": \"3277605\",\"type\": \"area\"}],\"title\": \"What is Lorem Ipsum?\",\"cover\": {\"path\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"thumb\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"width\": 468,\"type\": \"media\",\"height\": 263}},\"bodyResp\":{\"status\":{\"success\":false,\"errors\":\"Invalid value\",\"code\":6002},\"elements\":[]},\"timeReq\":\"2022-08-29T09:51:31.589974Z\",\"timeResp\":\"2022-08-29T09:51:31.598802Z\"}\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284600,
+        "timestamp": 1661766703134,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:40.861088Z",
+                "log": "2022-08-29 16:51:40.860  INFO 1 --- [nio-8080-exec-1] com.core.rest.utils.HttpLoggingFilter    : :::LOG-REQ-RESP:::{\"query\":\"{access_token=Ik1Zq906edONEKKWYYe4kH7iC8c}\",\"uri\":\"/posts/socPostCreat/v1\",\"pathInfo\":\"/posts/socPostCreat/v1\",\"url\":\"http://t-k8s-api-gw-non-ingress.hahalolo.com/posts/socPostCreat/v1\",\"header\":{\"uci\":[\"WFOW0G7cewtofNhmcSohjdbQ0dvlDAqjVXfeiHocasA=\"],\"cookie\":[\"SESSION=ZDAyYzg2ZTctMDJiZS00MmIxLWJmMzQtZjA2NTA0MWUwNDdl; SESSION=MjQ2YmQwMmItMmQ3Yy00MTgzLTgyOTktNTZhZjNlZjdkYzcw; SESSION=OTQxN2VhZjctY2EzYS00NTQ4LWIzMzgtNzc1MGMwZDAyNTM4\"],\"user-agent\":[\"PostmanRuntime/7.26.8\"],\"accept\":[\"*/*\"],\"postman-token\":[\"e92b69fd-162a-46d1-b33d-5d0a671b4ebe\"],\"accept-encoding\":[\"gzip, deflate, br\"],\"content-length\":[\"1508\"],\"x-real-ip\":[\"10.0.2.161\",\"10.0.2.161\"],\"forwarded\":[\"proto=http;host=t-k8s-api-gw-non-ingress.hahalolo.com;for=\\\"10.10.11.32:19912\\\"\"],\"host\":[\"192.168.39.27:8080\"],\"x-forwarded-proto\":[\"http\"],\"x-forwarded-prefix\":[\"/feed\"],\"x-forwarded-port\":[\"80\"],\"x-forwarded-host\":[\"t-k8s-api-gw-non-ingress.hahalolo.com\"],\"Content-Type\":[\"application/json;charset=UTF-8\"]},\"method\":\"POST\",\"className\":\"\",\"serverName\":\"t-k8s-api-gw-non-ingress.hahalolo.com\",\"user\":\"{nv108=minhtri.tmt1905@gmail.com, lang=vi, currency=VND, nv103=Truong, nv104=Minh Tri, nv105=Truong Minh Tri, nd106=1997-05-19, nv107=M, nv120=https://test-media.hahalolo.com/2021/06/22/04/14/cce13889aac64f2797ed85851bec73fe-1624335275.jpg, pn100=5f3220f1bc502605ccadf5dc, account_enabled=1, account_non_locked=1, nn130=1, nn132=0, nv111=VN, nv113=VN}\",\"bodyReq\":{\"scope\": \"pub\",\"owner\": \"5cfe239f7094910419363846\",\"typpost\": \"feed\",\"actor\": \"user\",\"content\": \"::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605::\",\"location\":[{\"name\": \"Bosnia and Herzegovina\",\"what\": \"3277605\",\"type\": \"area\"}],\"title\": \"What is Lorem Ipsum?\",\"cover\": {\"path\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"thumb\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"width\": 468,\"type\": \"media\",\"height\": 263}},\"bodyResp\":{\"status\":{\"success\":false,\"errors\":\"Invalid value\",\"code\":6002},\"elements\":[]},\"timeReq\":\"2022-08-29T09:51:40.853817Z\",\"timeResp\":\"2022-08-29T09:51:40.860628Z\"}\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284601,
+        "timestamp": 1661766708132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:47.534668Z",
+                "log": "2022-08-29 16:51:47.534  INFO 1 --- [nio-8080-exec-2] com.core.rest.utils.HttpLoggingFilter    : :::LOG-REQ-RESP:::{\"query\":\"{access_token=Ik1Zq906edONEKKWYYe4kH7iC8c}\",\"uri\":\"/posts/socPostCreat/v1\",\"pathInfo\":\"/posts/socPostCreat/v1\",\"url\":\"http://t-k8s-api-gw-non-ingress.hahalolo.com/posts/socPostCreat/v1\",\"header\":{\"uci\":[\"WFOW0G7cewtofNhmcSohjdbQ0dvlDAqjVXfeiHocasA=\"],\"cookie\":[\"SESSION=ZDAyYzg2ZTctMDJiZS00MmIxLWJmMzQtZjA2NTA0MWUwNDdl; SESSION=MjQ2YmQwMmItMmQ3Yy00MTgzLTgyOTktNTZhZjNlZjdkYzcw; SESSION=OTQxN2VhZjctY2EzYS00NTQ4LWIzMzgtNzc1MGMwZDAyNTM4\"],\"user-agent\":[\"PostmanRuntime/7.26.8\"],\"accept\":[\"*/*\"],\"postman-token\":[\"a975afd7-2dbc-4003-aee7-9bdc11a39100\"],\"accept-encoding\":[\"gzip, deflate, br\"],\"content-length\":[\"1508\"],\"x-real-ip\":[\"10.0.2.161\",\"10.0.2.161\"],\"forwarded\":[\"proto=http;host=t-k8s-api-gw-non-ingress.hahalolo.com;for=\\\"10.10.11.32:19912\\\"\"],\"host\":[\"192.168.39.27:8080\"],\"x-forwarded-proto\":[\"http\"],\"x-forwarded-prefix\":[\"/feed\"],\"x-forwarded-port\":[\"80\"],\"x-forwarded-host\":[\"t-k8s-api-gw-non-ingress.hahalolo.com\"],\"Content-Type\":[\"application/json;charset=UTF-8\"]},\"method\":\"POST\",\"className\":\"\",\"serverName\":\"t-k8s-api-gw-non-ingress.hahalolo.com\",\"user\":\"{nv108=minhtri.tmt1905@gmail.com, lang=vi, currency=VND, nv103=Truong, nv104=Minh Tri, nv105=Truong Minh Tri, nd106=1997-05-19, nv107=M, nv120=https://test-media.hahalolo.com/2021/06/22/04/14/cce13889aac64f2797ed85851bec73fe-1624335275.jpg, pn100=5f3220f1bc502605ccadf5dc, account_enabled=1, account_non_locked=1, nn130=1, nn132=0, nv111=VN, nv113=VN}\",\"bodyReq\":{\"scope\": \"pub\",\"owner\": \"5cfe239f7094910419363846\",\"typpost\": \"post\",\"actor\": \"user\",\"content\": \"::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605::\",\"location\":[{\"name\": \"Bosnia and Herzegovina\",\"what\": \"3277605\",\"type\": \"area\"}],\"title\": \"What is Lorem Ipsum?\",\"cover\": {\"path\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"thumb\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"width\": 468,\"type\": \"media\",\"height\": 263}},\"bodyResp\":{\"status\":{\"success\":false,\"errors\":\"Invalid value\",\"code\":6002},\"elements\":[]},\"timeReq\":\"2022-08-29T09:51:47.523694Z\",\"timeResp\":\"2022-08-29T09:51:47.534199Z\"}\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284602,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469270Z",
+                "log": "key:::scope\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284603,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469383Z",
+                "log": "key:::owner\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284604,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469395Z",
+                "log": "key:::typpost\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284605,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469411Z",
+                "log": "key:::actor\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284606,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469417Z",
+                "log": "key:::content\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284607,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469421Z",
+                "log": "key:::location\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284608,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469426Z",
+                "log": "key:::title\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284609,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469430Z",
+                "log": "key:::target\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284610,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469437Z",
+                "log": "key:::headerRequest\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284611,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469441Z",
+                "log": "key:::dl147\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284612,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469445Z",
+                "log": "key:::dl146\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284613,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469449Z",
+                "log": "key:::when\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284614,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469453Z",
+                "log": "key:::lang\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284615,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469456Z",
+                "log": "key:::langDefault\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284616,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.469461Z",
+                "log": "key:::isShare\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    },
+    {
+        "partitionID": 0,
+        "offset": 1284617,
+        "timestamp": 1661766713132,
+        "compression": "uncompressed",
+        "isTransactional": false,
+        "headers": [],
+        "key": {
+            "payload": {},
+            "encoding": "none",
+            "schemaId": 0
+        },
+        "value": {
+            "payload": {
+                "@timestamp": "2022-08-29T09:51:51.482127Z",
+                "log": "2022-08-29 16:51:51.481  INFO 1 --- [nio-8080-exec-4] com.core.rest.utils.HttpLoggingFilter    : :::LOG-REQ-RESP:::{\"query\":\"{access_token=Ik1Zq906edONEKKWYYe4kH7iC8c}\",\"uri\":\"/posts/socPostCreat/v1\",\"pathInfo\":\"/posts/socPostCreat/v1\",\"url\":\"http://t-k8s-api-gw-non-ingress.hahalolo.com/posts/socPostCreat/v1\",\"header\":{\"uci\":[\"WFOW0G7cewtofNhmcSohjdbQ0dvlDAqjVXfeiHocasA=\"],\"cookie\":[\"SESSION=ZDAyYzg2ZTctMDJiZS00MmIxLWJmMzQtZjA2NTA0MWUwNDdl; SESSION=MjQ2YmQwMmItMmQ3Yy00MTgzLTgyOTktNTZhZjNlZjdkYzcw; SESSION=OTQxN2VhZjctY2EzYS00NTQ4LWIzMzgtNzc1MGMwZDAyNTM4\"],\"user-agent\":[\"PostmanRuntime/7.26.8\"],\"accept\":[\"*/*\"],\"postman-token\":[\"4dde38b8-6826-444b-8886-d135d02afeba\"],\"accept-encoding\":[\"gzip, deflate, br\"],\"content-length\":[\"1507\"],\"x-real-ip\":[\"10.0.2.161\",\"10.0.2.161\"],\"forwarded\":[\"proto=http;host=t-k8s-api-gw-non-ingress.hahalolo.com;for=\\\"10.10.11.32:19912\\\"\"],\"host\":[\"192.168.39.27:8080\"],\"x-forwarded-proto\":[\"http\"],\"x-forwarded-prefix\":[\"/feed\"],\"x-forwarded-port\":[\"80\"],\"x-forwarded-host\":[\"t-k8s-api-gw-non-ingress.hahalolo.com\"],\"Content-Type\":[\"application/json;charset=UTF-8\"]},\"method\":\"POST\",\"className\":\"\",\"serverName\":\"t-k8s-api-gw-non-ingress.hahalolo.com\",\"user\":\"{nv108=minhtri.tmt1905@gmail.com, lang=vi, currency=VND, nv103=Truong, nv104=Minh Tri, nv105=Truong Minh Tri, nd106=1997-05-19, nv107=M, nv120=https://test-media.hahalolo.com/2021/06/22/04/14/cce13889aac64f2797ed85851bec73fe-1624335275.jpg, pn100=5f3220f1bc502605ccadf5dc, account_enabled=1, account_non_locked=1, nn130=1, nn132=0, nv111=VN, nv113=VN}\",\"bodyReq\":{\"scope\": \"pub\",\"owner\": \"5cfe239f7094910419363846\",\"typpost\": \"nor\",\"actor\": \"user\",\"content\": \"::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605::\",\"location\":[{\"name\": \"Bosnia and Herzegovina\",\"what\": \"3277605\",\"type\": \"area\"}],\"title\": \"What is Lorem Ipsum?\",\"cover\": {\"path\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"thumb\": \"https://test-media.hahalolo.com/2022/08/05/04/45/937576544a1521224cc503870903a3d7-1659674726.jpg\",\"width\": 468,\"type\": \"media\",\"height\": 263}},\"bodyResp\":{\"status\":{\"success\":true,\"errors\":null,\"code\":200},\"elements\":[{\"scope\":\"pub\",\"owner\":\"5f3220f1bc502605ccadf5dc\",\"typpost\":\"nor\",\"actor\":\"user\",\"content\":\"::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605:: ::3277605::\",\"location\":[{\"name\":\"Bosnia and Herzegovina\",\"what\":\"3277605\",\"type\":\"area\"}],\"title\":\"What is Lorem Ipsum?\",\"target\":\"5f3220f1bc502605ccadf5dc\",\"dl147\":\"minhtri.tmt1905@gmail.com\",\"when\":\"2022-08-29T09:51:51.462+00:00\",\"lang\":\"vi\",\"langDefault\":\"vi\",\"isShare\":0,\"id\":\"630c8c3708aae529644be381\",\"profile\":{\"name\":\"Truong Minh Tri\",\"id\":\"5f3220f1bc502605ccadf5dc\",\"avatar\":\"https://test-media.hahalolo.com/2021/06/22/04/14/af13d853421700bcbf15f1315c9e632f-1624335276.jpg\"}}]},\"timeReq\":\"2022-08-29T09:51:51.456254Z\",\"timeResp\":\"2022-08-29T09:51:51.481371Z\"}\n",
+                "stream": "stdout",
+                "kubernetes.pod_name": "feed-75444cbdbb-8mzvb",
+                "kubernetes.namespace_name": "0-core-rest-api",
+                "kubernetes.host": "t-k8s-2021-worker-11",
+                "kubernetes.container_name": "feed",
+                "kubernetes.container_image": "registry.hlcdn.net/t-core-rest-api/core-rest-feed:29-08-2022-16-26-59"
+            },
+            "encoding": "json",
+            "schemaId": 0
+        }
+    }
+]

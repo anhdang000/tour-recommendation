@@ -1,0 +1,7 @@
+transformers
+underthesea[deep]
+torchmetrics==0.5
+seqeval
+conllu
+kafka-python
+pymongo

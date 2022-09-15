@@ -22,7 +22,7 @@ from transformers import (
 from vncorenlp import VnCoreNLP
 from utils_ner import Split, TokenClassificationDataset, TokenClassificationTask
 
-from modules.configs import *
+from configs import *
 
 logger = logging.getLogger(__name__)
 
@@ -54,9 +54,7 @@ def no_accent_vietnamese(s):
 
     
 class LocationExtractor():
-    def __init__(self, mongodb_uri=MONGODB_URI, db='test', data='./data'):
-        self.client = MongoClient(mongodb_uri)
-        self.db = self.client[db]
+    def __init__(self, data='./data'):
         self.annotator = VnCoreNLP("VnCoreNLP/VnCoreNLP-1.1.1.jar", annotators="wseg", max_heap_size='-Xmx2g') 
 
         # Adiministrative divisions
@@ -65,6 +63,8 @@ class LocationExtractor():
 
         # Regex for special characters
         self.regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
+
+        self.init_model()
 
 
     def init_model(self):
@@ -104,7 +104,7 @@ class LocationExtractor():
 
     def get_location(self, line_segment):
         res_array = self.pipeline(line_segment)
-        list_locs = []
+        locs_list = []
         for _, value in enumerate(res_array):
             inds = [item["index"] for item in value]
             ranges_inds = get_ranges(inds)
@@ -116,8 +116,8 @@ class LocationExtractor():
                     word = value_dict[idx]["word"]
                     loc.append(word)
                 normalized_loc = ' '.join(' '.join(loc).replace('_', ' ').replace('@@ ','').replace(' @@', '').split())
-                list_locs.append(normalized_loc)
-        return list_locs
+                locs_list.append(normalized_loc)
+        return locs_list
 
 
     def search_dvhc_csv(query, df):
@@ -242,7 +242,7 @@ class LocationExtractor():
         return linked_locs_list, freq
 
     def update_db(self, post_id, linked_locs, freq):
-        self.db.post.update_one(
+        DB.post.update_one(
             {"post_id": post_id}, 
             {
                 "$push" : {
@@ -252,7 +252,7 @@ class LocationExtractor():
                 }
             }
         )
-        self.db.post.update_one(
+        DB.post.update_one(
             {"post_id": post_id}, 
             {
                 "$push" : {

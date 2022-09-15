@@ -71,3 +71,4 @@ target/
 /underthesea/pipeline/classification/fasttext.model
 wandb
 .xz
+.vscode/

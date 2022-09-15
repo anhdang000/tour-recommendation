@@ -9,19 +9,16 @@ import argparse
 from configs import *
 
 
-class LogCollector():
+class LogProcessor():
     """Collect logs from Kafka -> process logs -> save logs to database
     """
-    def __init__(self, topics=['log-feed'], mongodb_uri=MONGODB_URI, db='test'):
+    def __init__(self, topics=['log-feed']):
         self.topics = topics
 
         # Connect to kafka-server(k8s)
         # self.consumer = KafkaConsumer (
         #     **KAFKA_CFGS
         #     )
-
-        self.client = MongoClient(mongodb_uri)
-        self.db = self.client[db]
 
     def consume(self, topic):
         self.consumer.subscribe([topic])
@@ -93,8 +90,8 @@ class LogCollector():
                             "locations": [],
                             "frequency": []
                         }
-                        if element_dict_['post_id'] not in self.db.post.distinct('post_id'):
-                            self.db.post.insert_one(element_dict_)
+                        if element_dict_['post_id'] not in DB.post.distinct('post_id'):
+                            DB.post.insert_one(element_dict_)
                 else:
                     pass
         
@@ -109,5 +106,5 @@ class LogCollector():
         
 
 if __name__ == '__main__':
-    log_collector = LogCollector()
+    log_collector = LogProcessor()
     log_collector.process_json('raw_logs.json')

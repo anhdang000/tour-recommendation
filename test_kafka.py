@@ -1,8 +1,10 @@
+import json
+
 from kafka import KafkaConsumer
-from pymongo import MongoClient
+import pymongo
 
 
-CONSUMER = KafkaConsumer(
+consumer = KafkaConsumer(
     bootstrap_servers='10.10.15.72:9092,10.10.15.73:9092,10.10.15.74:9092',
     group_id='tour_recommend_anhdang',
     auto_offset_reset='latest',
@@ -12,8 +14,11 @@ CONSUMER = KafkaConsumer(
     sasl_plain_password='Hahalolo@2021'
     )
 
-CONSUMER.subscribe(["topic_social_post_ai.test-api-social.post"])
-
-MONGODB_URI = "mongodb+srv://anhdang000:anhdang000@cluster0.maozpf4.mongodb.net/?retryWrites=true&w=majority"
-CLIENT = MongoClient(MONGODB_URI)
-DB = CLIENT['test']
+consumer.subscribe(["topic_social_post_ai.test-api-social.post"])
+print(f'Subscribed to topic')
+while True:
+    for msg in consumer:
+        msg = json.loads(msg.value.decode("utf-8"))
+        print(msg)
+        with open('post_log.json', 'w') as f:
+            json.dump(msg, f)

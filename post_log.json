@@ -1,0 +1,61 @@
+{
+    "_id": {
+        "_data": "826322CE99000000012B022C0100296E5A10045581DAFEF18C41D38977AF6B0E63513546645F696400646322CE97DDB5D51102ECDECD0004"
+    },
+    "operationType": "insert",
+    "clusterTime": {
+        "$timestamp": {
+            "t": 1663225497,
+            "i": 1
+        }
+    },
+    "fullDocument": {
+        "_id": {
+            "$oid": "6322ce97ddb5d51102ecdecd"
+        },
+        "scope": "pub",
+        "owner": "62ff1618a6a8e510683d6e9f",
+        "typpost": "nor",
+        "actor": "user",
+        "content": "Posttt",
+        "target": "62ff1618a6a8e510683d6e9f",
+        "headerRequest": {
+            "accept": "application/json",
+            "content-type": "application/json",
+            "x-app-name": "Newsfeed",
+            "lang": "3",
+            "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33",
+            "ipaddress": "203.162.53.188",
+            "uuid": "77baf92c-4561-4703-87bc-d0f4b600e6fd",
+            "content-length": "146",
+            "forwarded": "proto=https;host=test-api-gateway.hahalolo.com;for=\"10.10.15.136:56502\"",
+            "x-forwarded-for": "10.10.12.112,10.10.12.112,10.10.15.136",
+            "x-forwarded-proto": "https",
+            "x-forwarded-prefix": "/feed",
+            "x-forwarded-port": "443",
+            "x-forwarded-host": "test-api-gateway.hahalolo.com",
+            "host": "10.10.12.54:9098",
+            "token": "4sK0-pwavE3UCsNzWwYoG0Boqc4",
+            "ip": "10.10.12.112,10.10.12.112,10.10.15.136"
+        },
+        "dl147": "songah8@gmail.com",
+        "dl146": {
+            "$date": 1663225496812
+        },
+        "when": {
+            "$date": 1663225496812
+        },
+        "lang": "vi",
+        "langDefault": "vi",
+        "isShare": 0
+    },
+    "ns": {
+        "db": "test-api-social",
+        "coll": "post"
+    },
+    "documentKey": {
+        "_id": {
+            "$oid": "6322ce97ddb5d51102ecdecd"
+        }
+    }
+}

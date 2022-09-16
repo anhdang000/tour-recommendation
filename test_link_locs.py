@@ -30,7 +30,11 @@ def search_dvhc_csv(query, df):
     Args:
         query (string): location text
         df (pd.Dataframe): dataframe to search
-
+    
+    Returns:
+        level (int): Level of location
+        location (List[Tuple[str]]): Linked locations found by querying database
+        attraction (str): Tourist attractions (level-5 location)
     """
     query = query.lower()
     found_locs_2 = df.loc[df['tinh-tp'].str.contains(query, case=False)]['tinh-tp']
@@ -41,7 +45,7 @@ def search_dvhc_csv(query, df):
 
     # tinh-tp
     if len(found_locs_2_u) == 1:
-        return 2, found_locs_2_u[0]
+        return 2, found_locs_2_u[0], None
 
     # quan-huyen
     if len(found_locs_3) >= 1:
@@ -51,7 +55,7 @@ def search_dvhc_csv(query, df):
             if row['tinh-tp'] not in lv2_list:
                 results.append((row['tinh-tp'], row['quan-huyen']))
         results = list(set(results))
-        return 3, results
+        return 3, results, None
 
     # phuong-xa
     if len(found_locs_4) >= 1:
@@ -61,9 +65,9 @@ def search_dvhc_csv(query, df):
             if row['tinh-tp'] not in lv2_list:
                 results.append((row['tinh-tp'], row['quan-huyen'], row['phuong-xa']))
         results = list(set(results))
-        return 4, results
+        return 4, results, None
 
-    return None, None
+    return 5, None, query
 
 
 def compute_freq_dict(locs_by_level):
@@ -102,23 +106,31 @@ if __name__ == "__main__":
     for locs in locs_list:
         # Process locations in a post
         locs_by_level = {}
+        attractions = []
+        all_locs = []
         for loc in locs:
             loc_noaccent = no_accent_vietnamese(loc)
             if not regex.search(loc):
-                lvl, loc_results = search_dvhc_csv(loc, dvhc_df)
-                # `loc_results` is level-2 location
-                if type(loc_results) == str:
+                lvl, loc_result, attraction = search_dvhc_csv(loc, dvhc_df)
+                # `loc_result` is level-2 location
+                if type(loc_result) == str:
                     if lvl in locs_by_level.keys():
-                        locs_by_level[lvl].append(loc_results)
+                        locs_by_level[lvl].append(loc_result)
+                        all_locs.append(lvl)
                     else:
-                        locs_by_level[lvl] = [loc_results]
-                elif type(loc_results) == list:
+                        locs_by_level[lvl] = [loc_result]
+                        all_locs.append(lvl)
+                elif type(loc_result) == list:
                     if lvl in locs_by_level.keys():
-                        locs_by_level[lvl] += loc_results
-                        locs_by_level[lvl] += loc_results
+                        locs_by_level[lvl] += loc_result
+                        all_locs.append(lvl)
                     else:
-                        locs_by_level[lvl] = loc_results
-                
+                        locs_by_level[lvl] = loc_result
+                        all_locs.append(lvl)
+                elif attraction is not None:
+                    attractions.append(attraction)
+                    all_locs.append(attraction)
+        print(f'All locs: {all_locs}')
         # Compute frequency
         levels = list(locs_by_level.keys())
         for lvl in levels:
@@ -151,4 +163,7 @@ if __name__ == "__main__":
             freq.append(tuple(freq_dict[l] if l in freq_dict.keys() else 1 for l in linked_loc))
                 
         print(f'freq: {freq}')
+        print('=======================')
+
+        sys.exit()
         

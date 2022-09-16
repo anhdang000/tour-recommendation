@@ -9,32 +9,38 @@ import argparse
 from configs import *
 
 
-class LogProcessor():
+class LogCollector():
     """Collect logs from Kafka -> process logs -> save logs to database
     """
-    def __init__(self, topics=['log-feed']):
-        self.topics = topics
+    def __init__(self):
+        pass
 
-        # Connect to kafka-server(k8s)
-        # self.consumer = KafkaConsumer (
-        #     **KAFKA_CFGS
-        #     )
+    def process_post(self, msg):
+        try:
+            post_id = msg["fullDocument"]["_id"]["$oid"]
+            timestamp = msg["clusterTime"]["$timestamp"]["t"]
+            owner_id = msg["fullDocument"]["owner"]
+            post_type = msg["fullDocument"]["typpost"]
+            content = msg["fullDocument"]["content"]
+        except:
+            return
 
-    def consume(self, topic):
-        self.consumer.subscribe([topic])
+        # Save to database
+        element_dict_ = {
+            "post_id": post_id,
+            "timestamp": timestamp,
+            "owner_id": owner_id,
+            "post_type": post_type,
+            "content": content,
+            "locations": [],
+            "frequency": []
+        }
+        if element_dict_['post_id'] not in DB.post.distinct('post_id'):
+            DB.post.insert_one(element_dict_)
 
-        for message in self.consumer:
-            print(message.value)
-            msg = json.loads(message.value.decode("utf-8")) 
-            # Check for `LOG-REQ-RESP`
-            if "LOG-REQ-RESP" in msg['log']:
-                # result = process_log(msg["log"]) # msg["log"] là kiểu str, xử lý log
-                # lưu log vào file
-                with open(f'{topic}.json', mode='a', encoding='utf-8') as f:
-                    f.write(json.dumps(msg["log"], indent=4) + '\n')
 
-    def process(self, log, uri_check='/posts/socPostCreat/v1', type='post'):
-        """ Process log and extract neccessary information
+    def process_interact(self, log, uri_check='/posts/socPostCreat/v1', type='post'):
+        """ [DEPRECATED] Process log and extract neccessary information 
 
         Args:
             log (str): raw log
@@ -103,8 +109,14 @@ class LogProcessor():
             if 'LOG-REQ-RESP' in log:
                 self.process(log)
 
-        
+    def run(self):
+        while True:
+            for msg in CONSUMER:
+                msg = json.loads(msg.value.decode("utf-8"))
+                print(msg)
+                self.process_post(msg)
+    
 
 if __name__ == '__main__':
-    log_collector = LogProcessor()
-    log_collector.process_json('raw_logs.json')
+    log_collector = LogCollector()
+    log_collector.run()

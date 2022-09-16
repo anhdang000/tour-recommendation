@@ -34,7 +34,6 @@ def get_ranges(nums):
     edges = list(zip(edges, edges))
     return [list(range(edge[0], edge[1] + 1)) for edge in edges]
 
-
 def no_accent_vietnamese(s):
     s = re.sub('[áàảãạăắằẳẵặâấầẩẫậ]', 'a', s)
     s = re.sub('[ÁÀẢÃẠĂẮẰẲẴẶÂẤẦẨẪẬ]', 'A', s)
@@ -51,7 +50,6 @@ def no_accent_vietnamese(s):
     s = re.sub('đ', 'd', s)
     s = re.sub('Đ', 'D', s)
     return s
-
     
 class LocationExtractor():
     def __init__(self, data='./data'):
@@ -65,7 +63,6 @@ class LocationExtractor():
         self.regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
 
         self.init_model()
-
 
     def init_model(self):
         self.config = AutoConfig.from_pretrained(
@@ -92,7 +89,6 @@ class LocationExtractor():
 
         self.pipeline = transformers.pipeline("ner", model=self.model, tokenizer=self.tokenizer, device=0)
 
-
     def get_word_segment_data(self, data):
         text_data = []
         for sample in data:
@@ -100,7 +96,6 @@ class LocationExtractor():
             text = ' '.join([' '.join(x) for x in text])
             text_data.append(text)
         return text_data
-
 
     def get_location(self, line_segment):
         res_array = self.pipeline(line_segment)
@@ -119,14 +114,17 @@ class LocationExtractor():
                 locs_list.append(normalized_loc)
         return locs_list
 
-
-    def search_dvhc_csv(query, df):
+    def search_dvhc_csv(self, query, df):
         """Search location query and return level-2 location or list of (level-2, level-3) or (level-2, level-4) location
 
         Args:
             query (string): location text
             df (pd.Dataframe): dataframe to search
-
+        
+        Returns:
+            level (int): Level of location
+            location (Tuple): Linked locations found by querying database
+            attraction (str): Tourist attractions (level-5 location)
         """
         query = query.lower()
         found_locs_2 = df.loc[df['tinh-tp'].str.contains(query, case=False)]['tinh-tp']
@@ -137,7 +135,7 @@ class LocationExtractor():
 
         # tinh-tp
         if len(found_locs_2_u) == 1:
-            return 2, found_locs_2_u[0]
+            return 2, found_locs_2_u[0], None
 
         # quan-huyen
         if len(found_locs_3) >= 1:
@@ -147,7 +145,7 @@ class LocationExtractor():
                 if row['tinh-tp'] not in lv2_list:
                     results.append((row['tinh-tp'], row['quan-huyen']))
             results = list(set(results))
-            return 3, results
+            return 3, results, None
 
         # phuong-xa
         if len(found_locs_4) >= 1:
@@ -157,10 +155,9 @@ class LocationExtractor():
                 if row['tinh-tp'] not in lv2_list:
                     results.append((row['tinh-tp'], row['quan-huyen'], row['phuong-xa']))
             results = list(set(results))
-            return 4, results
+            return 4, results, None
 
-        return None, None
-
+        return 5, None, query
 
     def compute_freq_dict(locs_by_level):
         freq_dict = {}   # Store in word-frequency pairs
@@ -179,7 +176,6 @@ class LocationExtractor():
                         freq_dict[loc[-1]] += 1
         return freq_dict
 
-
     def link_locations(self, locs_list):
         """Link locations from multiple levels and compute frequency of apprearance for each locations.
 
@@ -193,10 +189,11 @@ class LocationExtractor():
         """
         # Process locations in a post
         locs_by_level = {}
+        attractions = []
         for loc in locs_list:
             # loc_noaccent = self.no_accent_vietnamese(loc)
             if not self.regex.search(loc):
-                lvl, loc_results = self.search_dvhc_csv(loc, self.dvhc_df)
+                lvl, loc_results, attraction = self.search_dvhc_csv(loc, self.dvhc_df)
                 # `loc_results` is level-2 location
                 if type(loc_results) == str:
                     if lvl in locs_by_level.keys():
@@ -205,7 +202,6 @@ class LocationExtractor():
                         locs_by_level[lvl] = [loc_results]
                 elif type(loc_results) == list:
                     if lvl in locs_by_level.keys():
-                        locs_by_level[lvl] += loc_results
                         locs_by_level[lvl] += loc_results
                     else:
                         locs_by_level[lvl] = loc_results
@@ -241,13 +237,13 @@ class LocationExtractor():
 
         return linked_locs_list, freq
 
-    def update_db(self, post_id, linked_locs, freq):
+    def update_db(self, post_id, locs, freq):
         DB.post.update_one(
             {"post_id": post_id}, 
             {
                 "$push" : {
                     "locations": {
-                        "$each": linked_locs
+                        "$each": locs
                     }
                 }
             }

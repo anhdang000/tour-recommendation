@@ -1,6 +1,6 @@
 from configs import *
-from log_processor import LogProcessor
+from log_collector import LogCollector
 from score_evaluator import ScoreEvaluator
 from location_extractor import LocationExtractor
 
-__all__ = "LogProcessor, ScoreEvaluator, LocationExtractor, CLIENT, DB, CONSUMER, "
+__all__ = ["LogCollector", "ScoreEvaluator", "LocationExtractor", "DB", "CONSUMER"]

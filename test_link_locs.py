@@ -37,6 +37,22 @@ def search_dvhc_csv(query, df):
         attraction (str): Tourist attractions (level-5 location)
     """
     query = query.lower()
+    abbrev_dict = {
+        "vn": "việt nam", 
+        "t": "tỉnh", "t.": "tỉnh",
+        "tp": "thành phố", "tp.": "thành phố", 
+        "p": "phường", "p.": "phường", 
+        "tx": "thị xã", "tx.": "thị xã",
+        "tt": "thị trấn", "tt.": "thị trấn",
+        "hcm": "hồ chí minh", "hn": "hà nội"
+        }
+    query = ' '.join([abbrev_dict[x] if x in abbrev_dict.keys() else x for x in query.split()])
+    ignore_list = ["việt nam", "liên hệ"]
+
+    for ignore in ignore_list:
+        if ignore in query:
+            return None, None, None
+            
     found_locs_2 = df.loc[df['tinh-tp'].str.contains(query, case=False)]['tinh-tp']
     found_locs_3 = df.loc[df['quan-huyen'].str.contains(query, case=False)]
     found_locs_4 = df.loc[df['phuong-xa'].str.contains(query, case=False)]
@@ -51,7 +67,7 @@ def search_dvhc_csv(query, df):
     if len(found_locs_3) >= 1:
         lv2_list = []
         results = []
-        for i, row in found_locs_3.iterrows():
+        for _, row in found_locs_3.iterrows():
             if row['tinh-tp'] not in lv2_list:
                 results.append((row['tinh-tp'], row['quan-huyen']))
         results = list(set(results))
@@ -61,7 +77,7 @@ def search_dvhc_csv(query, df):
     if len(found_locs_4) >= 1:
         lv2_list = []
         results = []
-        for i, row in found_locs_4.iterrows():
+        for _, row in found_locs_4.iterrows():
             if row['tinh-tp'] not in lv2_list:
                 results.append((row['tinh-tp'], row['quan-huyen'], row['phuong-xa']))
         results = list(set(results))
@@ -116,7 +132,7 @@ if __name__ == "__main__":
                 if type(loc_result) == str:
                     if lvl in locs_by_level.keys():
                         locs_by_level[lvl].append(loc_result)
-                        all_locs.append(lvl)
+                        all_locs.append(loc_result.upper())
                     else:
                         locs_by_level[lvl] = [loc_result]
                         all_locs.append(lvl)

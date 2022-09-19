@@ -205,7 +205,7 @@ class LocationExtractor():
                         locs_by_level[lvl] += loc_results
                     else:
                         locs_by_level[lvl] = loc_results
-                
+
         # Compute frequency
         levels = list(locs_by_level.keys())
         for lvl in levels:

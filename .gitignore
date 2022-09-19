@@ -72,3 +72,5 @@ target/
 wandb
 .xz
 .vscode/
+
+vn_words/

@@ -2,6 +2,7 @@ import sys
 import os
 import os.path as osp
 import re
+import itertools
 import logging
 from importlib import import_module
 
@@ -58,6 +59,23 @@ class LocationExtractor():
         # Adiministrative divisions
         self.dvhc_df = pd.read_csv(osp.join(data, 'dvhc.csv'))
         self.dvhc_df = self.dvhc_df.fillna('')
+
+        # VN words dictionary
+        with open('vn_words/Viet74k.txt', encoding='utf-8') as f:
+            word_list = [line.strip().split() for line in f.readlines()]
+        self.words = set(itertools.chain.from_iterable(word_list))
+
+        # Abbrev & Ignorable
+        self.abbrev_dict = {
+            "vn": "việt nam", 
+            "t": "tỉnh", "t.": "tỉnh",
+            "tp": "thành phố", "tp.": "thành phố", 
+            "p": "phường", "p.": "phường", 
+            "tx": "thị xã", "tx.": "thị xã",
+            "tt": "thị trấn", "tt.": "thị trấn",
+            "hcm": "hồ chí minh", "hn": "hà nội"
+        }
+        self.ignorables = ["việt nam", "liên hệ"]
 
         # Regex for special characters
         self.regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
@@ -193,7 +211,7 @@ class LocationExtractor():
         for loc in locs_list:
             # loc_noaccent = self.no_accent_vietnamese(loc)
             if not self.regex.search(loc):
-                lvl, loc_results, attraction = self.search_dvhc_csv(loc, self.dvhc_df)
+                lvl, loc_results, attraction = self.search_dvhc_csv(loc)
                 # `loc_results` is level-2 location
                 if type(loc_results) == str:
                     if lvl in locs_by_level.keys():

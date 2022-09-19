@@ -3,6 +3,7 @@ import os
 import os.path as osp
 
 import json
+import itertools
 import re
 import pandas as pd
 
@@ -24,7 +25,7 @@ def no_accent_vietnamese(s):
     s = re.sub('Đ', 'D', s)
     return s
 
-def search_dvhc_csv(query, df):
+def search_dvhc_csv(query, df, words, abbrev_dict, ignorables):
     """Search location query and return level-2 location or list of (level-2, level-3) or (level-2, level-4) location
 
     Args:
@@ -37,22 +38,16 @@ def search_dvhc_csv(query, df):
         attraction (str): Tourist attractions (level-5 location)
     """
     query = query.lower()
-    abbrev_dict = {
-        "vn": "việt nam", 
-        "t": "tỉnh", "t.": "tỉnh",
-        "tp": "thành phố", "tp.": "thành phố", 
-        "p": "phường", "p.": "phường", 
-        "tx": "thị xã", "tx.": "thị xã",
-        "tt": "thị trấn", "tt.": "thị trấn",
-        "hcm": "hồ chí minh", "hn": "hà nội"
-        }
     query = ' '.join([abbrev_dict[x] if x in abbrev_dict.keys() else x for x in query.split()])
-    ignore_list = ["việt nam", "liên hệ"]
 
-    for ignore in ignore_list:
+    for ignore in ignorables:
         if ignore in query:
             return None, None, None
-            
+
+    if sum([s in words for s in query.split()]) == 0:
+        print(f'IGNORE: {query}')
+        return None, None, None
+    
     found_locs_2 = df.loc[df['tinh-tp'].str.contains(query, case=False)]['tinh-tp']
     found_locs_3 = df.loc[df['quan-huyen'].str.contains(query, case=False)]
     found_locs_4 = df.loc[df['phuong-xa'].str.contains(query, case=False)]
@@ -117,6 +112,24 @@ if __name__ == "__main__":
     with open('sample_loc_outputs.txt', encoding='utf-8') as f:
         locs_list = [line.strip().split(',') for line in f.readlines()]
     
+    # VN words
+    with open('vn_words/Viet74k.txt', encoding='utf-8') as f:
+            word_list = [line.strip().split() for line in f.readlines()]
+    words = set(itertools.chain.from_iterable(word_list))
+
+    # Abbrev & Ignorables
+    abbrev_dict = {
+        "vn": "việt nam", 
+        "t": "tỉnh", "t.": "tỉnh",
+        "tp": "thành phố", "tp.": "thành phố", 
+        "p": "phường", "p.": "phường", 
+        "tx": "thị xã", "tx.": "thị xã",
+        "tt": "thị trấn", "tt.": "thị trấn",
+        "hcm": "hồ chí minh", "hn": "hà nội"
+        }
+    ignorables = ["việt nam", "liên hệ"]
+
+    # Regex for special characters
     regex = re.compile('[@_!#$%^&*()<>?/\|}{~:]')
 
     for locs in locs_list:
@@ -127,7 +140,9 @@ if __name__ == "__main__":
         for loc in locs:
             loc_noaccent = no_accent_vietnamese(loc)
             if not regex.search(loc):
-                lvl, loc_result, attraction = search_dvhc_csv(loc, dvhc_df)
+                lvl, loc_result, attraction = search_dvhc_csv(loc, dvhc_df, words, abbrev_dict, ignorables)
+                if lvl is None and loc_result is None and attraction is None:
+                    continue
                 # `loc_result` is level-2 location
                 if type(loc_result) == str:
                     if lvl in locs_by_level.keys():
@@ -135,14 +150,11 @@ if __name__ == "__main__":
                         all_locs.append(loc_result.upper())
                     else:
                         locs_by_level[lvl] = [loc_result]
-                        all_locs.append(lvl)
                 elif type(loc_result) == list:
                     if lvl in locs_by_level.keys():
                         locs_by_level[lvl] += loc_result
-                        all_locs.append(lvl)
                     else:
                         locs_by_level[lvl] = loc_result
-                        all_locs.append(lvl)
                 elif attraction is not None:
                     attractions.append(attraction)
                     all_locs.append(attraction)
@@ -181,5 +193,5 @@ if __name__ == "__main__":
         print(f'freq: {freq}')
         print('=======================')
 
-        sys.exit()
+        # sys.exit()
         
